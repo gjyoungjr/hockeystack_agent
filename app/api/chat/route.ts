@@ -23,9 +23,7 @@ export async function POST(req: Request) {
           query: z.string(),
         }),
         execute: async ({ query }) => {
-          console.log("Tool invoked with query:", query);
           const res = await journeyResearcher(query);
-          console.log("Tool response:", res);
           return res.answer;
         },
       }),
