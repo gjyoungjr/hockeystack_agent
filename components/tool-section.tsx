@@ -12,7 +12,7 @@ interface ToolSectionProps {
 
 export function ToolSection({ tool, isOpen, onOpenChange }: ToolSectionProps) {
   switch (tool.toolName) {
-    case "retrieve":
+    case "getJourneyInsights":
       return (
         <RetrieveSection
           tool={tool}

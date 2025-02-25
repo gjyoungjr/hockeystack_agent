@@ -90,6 +90,8 @@ export function ChatMessages({
     }));
   };
 
+  console.log(showLoading, lastToolData);
+
   return (
     <div className="relative mx-auto px-4 w-full">
       {messages.map((message) => (
